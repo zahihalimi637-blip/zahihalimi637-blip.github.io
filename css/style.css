@@ -1,0 +1,36 @@
+body {
+              background-color: #28282D;
+              font-family: "Courier New", Courier, monospace;
+              color: #57993D;
+              font-size: 16px;
+              display: flex;
+          }
+          a {
+              color: #57993D;
+          }
+          a:hover {
+              color: #7CCB5C;
+          }
+          .container {
+              width: 600px;
+              padding: 2rem;
+              margin: 0 auto;
+          }
+          @keyframes blink {
+              50% {
+                  opacity: 0;
+              }
+          }
+          #cursor {
+              animation: blink 1s step-end infinite;
+          }
+          h1 {
+              font-size: 32px;
+          }
+          pre {
+              font-size: 16px;
+          }
+          #log {
+              width: 25%;
+              display: inline-block;
+          }
