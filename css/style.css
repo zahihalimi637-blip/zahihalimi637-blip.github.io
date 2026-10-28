@@ -1,1 +1,44 @@
-body { background-color: #28282D; font-family: "Courier New", Courier, monospace; color: #57993D; font-size: 16px; display: flex; } a { color: #57993D; } a:hover { color: #7CCB5C; } .container { width: 700px; padding: 2rem; margin: 0 auto; } @keyframes blink { 50% { opacity: 0; } } #cursor { animation: blink 1s step-end infinite; } pre { font-size: 16px; } /* ========================= VIM WINDOW ========================= */ .vim-window { width: 100%; margin: 1rem 0 2rem 0; border: 1px solid #3d3d42; background-color: #1e1e22; } /* Vim top bar */ .vim-header { background-color: #303036; color: #777777; padding: 4px 8px; font-size: 14px; } /* Code */ .vim-code { margin: 0; padding: 10px 0; line-height: 1.5; color: #d0d0d0; overflow-x: auto; } /* Line numbers */ .line-number { display: inline-block; width: 35px; padding-right: 12px; text-align: right; color: #55555c; user-select: none; } /* Vim-like syntax colors */ .keyword { color: #c586c0; } .string { color: #ce9178; } .number { color: #b5cea8; } .function { color: #dcdcaa; } .preprocessor { color: #569cd6; } .header { color: #4ec9b0; } .section { color: #569cd6; } .instruction { color: #d7ba7d; } /* Vim status bar */ .vim-status { background-color: #57993D; color: #28282D; padding: 3px 8px; font-size: 14px; }
+body {
+    background-color: #28282D;
+    font-family: "Courier New", Courier, monospace;
+    color: #57993D;
+    font-size: 16px;
+    display: flex;
+}
+
+a {
+    color: #57993D;
+}
+
+a:hover {
+    color: #7CCB5C;
+}
+
+.container {
+    width: 600px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#cursor {
+    animation: blink 1s step-end infinite;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+#log {
+    width: 25%;
+    display: inline-block;
+}
