@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Zahi Halimi | Developer Portfolio</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <pre>
+__________      .__    .__    ___ ___        .__  .__        .__
+\____    /____  |  |__ |__|  /   |   \_____  |  | |__| _____ |__|
+  /     /\__  \ |  |  \|  | /    ~    \__  \ |  | |  |/     \|  |
+ /     /_ / __ \|   Y  \  | \    Y    // __ \|  |_|  |  Y Y  \  |
+/_______ (____  /___|  /__|  \___|_  /(____  /____/__|__|_|  /__|
+        \/    \/     \/            \/      \/              \/
+
+                </pre>
+            </header>
+            <nav>
+                <p>user@workstation:~$ ls</p>
+                <ul>
+                    <li><a href="index.html">about.txt</a></li>
+                    <li><a href="projects.html">projects/</a></li>
+                    <li><a href="skills.html">skills.txt</a></li>
+                    <li><a href="contact.html">contact.txt</a></li>
+                    <li><a href="helloWorld.html">helloWorld/</a></li>
+                </ul>
+            </nav>
+            <section>
+                <p>user@workstation:~$ vim helloWorld.py</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.py" 1,1</div>
+                    <pre
+                        class="vim-code"
+                    >
+  <span class="keyword">print</span>(<span class="string">"Hello, World!"</span>)
+</pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.py</div>
+                </div>
+                <p>user@workstation:~$ vim helloWorld.c</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.c"</div>
+                    <pre
+                        class="vim-code"
+                    >
+  <span class="preprocessor">#include</span> <span class="header">&lt;stdio.h&gt;</span>
+  <span class="keyword">int</span> <span class="function">main</span>() {
+  <span class="function">printf</span>(<span class="string">"Hello, World!\n"</span>);
+  <span class="keyword">return</span></span>;
+  <span>}</span></pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.c</div>
+                </div>
+                <p>user@workstation:~$ vim helloWorld.cpp</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.cpp" 1,1</div>
+                    <pre
+                        class="vim-code"
+                    >
+  <span class="preprocessor">#include</span> <span class="header">&lt;iostream&gt;</span> 
+  <span class="keyword">int</span><span class="function">main</span>() { 
+  std::cout &lt;&lt; <span class="string">"Hello, World!"</span> &lt;&lt; std::endl;  
+  <span class="keyword">return</span>;
+  }</pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.cpp</div>
+                </div>
+                <p>user@workstation:~$ vim helloWorld.js</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.js" 1,1</div>
+                    <pre
+                        class="vim-code"
+                    ><span class="line-number">1</span> console.<span class="function">log</span>(<span class="string">"Hello, World!"</span>); <span class="line-number">2</span> <span class="line-number">3</span> <span class="line-number">4</span> <span class="line-number">5</span></pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.js</div>
+                </div>
+                <p>user@workstation:~$ vim helloWorld.go</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.go" 1,1</div>
+                    <pre
+                        class="vim-code"
+                    ><span class="line-number">1</span> <span class="keyword">package</span> main <span class="line-number">2</span> <span class="line-number">3</span> <span class="keyword">import</span> <span class="string">"fmt"</span> <span class="line-number">4</span> <span class="line-number">5</span> <span class="keyword">func</span> <span class="function">main</span>() { <span class="line-number">6</span> fmt.<span class="function">Println</span>(<span class="string">"Hello, World!"</span>) <span class="line-number">7</span> } <span class="line-number">8</span></pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.go</div>
+                </div>
+                <p>user@workstation:~$ vim helloWorld.asm</p>
+                <div class="vim-window">
+                    <div class="vim-header">"helloWorld.asm" 1,1</div>
+                    <pre
+                        class="vim-code"
+                    ><span class="line-number">1</span> <span class="section">section</span> .data <span class="line-number">2</span> msg db <span class="string">"Hello, World!"</span>, <span class="number">10</span> <span class="line-number">3</span> len equ $ - msg <span class="line-number">4</span> <span class="line-number">5</span> <span class="section">section</span> .text <span class="line-number">6</span> <span class="keyword">global</span> _start <span class="line-number">7</span> <span class="line-number">8</span> _start: <span class="line-number">9</span> <span class="instruction">mov</span> rax, <span class="number">1</span> <span class="line-number">10</span> <span class="instruction">mov</span> rdi, <span class="number">1</span> <span class="line-number">11</span> <span class="instruction">mov</span> rsi, msg <span class="line-number">12</span> <span class="instruction">mov</span> rdx, len <span class="line-number">13</span> <span class="instruction">syscall</span> <span class="line-number">14</span> <span class="instruction">mov</span> rax, <span class="number">60</span> <span class="line-number">15</span> <span class="instruction">xor</span> rdi, rdi <span class="line-number">16</span> <span class="instruction">syscall</span> <span class="line-number">17</span></pre>
+                    <div class="vim-status">-- NORMAL -- helloWorld.asm</div>
+                </div>
+                <p>user@workstation:~$ <span id="cursor">█</span></p>
+            </section>
+        </div>
+    </body>
+</html>
